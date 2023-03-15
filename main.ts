@@ -1,0 +1,13 @@
+xgo.init_xgo_serial(SerialPin.P2, SerialPin.P1)
+basic.showIcon(IconNames.Skull)
+basic.forever(function () {
+    basic.showIcon(IconNames.Silly)
+    xgo.execution_action(xgo.action_enum.Squat)
+    basic.pause(5000)
+    xgo.execution_action(xgo.action_enum.Crawl_forward)
+    basic.pause(5000)
+    xgo.execution_action(xgo.action_enum.Stand)
+    basic.pause(2000)
+    xgo.execution_action(xgo.action_enum.Whirl)
+    basic.pause(5000)
+})
